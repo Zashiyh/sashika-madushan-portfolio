@@ -15,7 +15,7 @@ const projects = [
     demo: "#"
   },
   {
-    title: "Traveler App",
+    title: "Traveler Appp",
     image: "/traveler.png",
     description: "A travel social media application where users can share travel experiences and photos.",
     tech: ["Android", "Jetpack Compose", "Firebase", "Kotlin"],
