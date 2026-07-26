@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Hotel Booking Platform",
     image: "/hotel.png",
-    description: "A modern hotel booking platform with search, booking management and responsive UI.",
+    description: "BookingLK is a full-stack hotel booking platform for discovering and reserving hotels across Sri Lanka. It is built using Next.js, React, and TypeScript, with MongoDB Atlas for data storage, Next.js API Routes for backend functionality, and Nodemailer for automated booking confirmation emails. The UI is fully responsive and enhanced with Tailwind CSS, CSS Modules, and Framer Motion.",
     tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
     github: "#",
     demo: "#"
