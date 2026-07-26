@@ -11,32 +11,32 @@ const projects = [
     image: "/hotel.png",
     description: "BookingLK is a modern full-stack hotel booking web application that enables users to explore and book hotels across Sri Lanka. The platform features hotel search, detailed property listings, real-time booking, and email confirmation for reservations. Built with Next.js, React, and TypeScript, the application uses MongoDB Atlas as the database and Next.js API Routes for backend services. The interface is designed with Tailwind CSS, CSS Modules, and Framer Motion to provide a responsive and engaging user experience.",
     tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Zashiyh/bookinglkapi",
+    demo: "https://hotel-booking-demo.vercel.app"
   },
   {
     title: "Traveler App",
     image: "/traveler.png",
     description: "Traveler is a modern travel social media mobile application developed using Android Studio and Jetpack Compose. The app allows users to share travel experiences, upload photos, explore destinations, and interact with other travelers. It features Firebase Authentication, Firebase Realtime Database, image uploading, user profiles, and a clean Material Design interface, providing a seamless and engaging travel community experience.",
     tech: ["Android", "Jetpack Compose", "Firebase", "Kotlin"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Zashiyh/Traveler1",
+    demo: "https://traveler-demo.vercel.app"
   },
   {
     title: "IntelliChat AI",
     image: "/chatbot.png",
     description: "IntelliChat AI is an intelligent AI-powered chatbot web application developed using React, TypeScript, Tailwind CSS, FastAPI, Python, and MongoDB. The application enables users to interact with an AI assistant through a modern chat interface, supporting real-time conversations, file attachments, and secure message storage. It provides a fast, responsive, and user-friendly experience for AI-powered communication.",
     tech: ["React", "FastAPI", "MongoDB", "Gemini AI"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Zashiyh/ChatBot",
+    demo: "https://intellichat-demo.vercel.app"
   },
   {
     title: "Gamer Zone",
     image: "/gamerzone.png",
     description: "GamerZone is a responsive game selling web application developed using HTML, CSS, PHP, and MySQL. The platform allows users to browse and purchase games through an intuitive interface, while administrators can manage game listings, categories, and customer orders. The system provides a secure and user-friendly online game store experience.",
     tech: ["HTML", "php", "CSS", "MYSQL"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/your-username/gamer-zone",
+    demo: "https://gamerzone-demo.vercel.app"
   }
 ];
 
@@ -110,10 +110,20 @@ export default function Projects() {
                       </div>
 
                       <div className="project-links">
-                        <a href={project.github} className="github-link">
+                        <a 
+                          href={project.github} 
+                          className="github-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <FaGithub /> Code
                         </a>
-                        <a href={project.demo} className="demo-link">
+                        <a 
+                          href={project.demo} 
+                          className="demo-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <FaExternalLinkAlt /> Live Demo
                         </a>
                       </div>
