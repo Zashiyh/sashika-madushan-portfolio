@@ -1,0 +1,249 @@
+.navbar {
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 950px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(76, 201, 240, 0.25);
+  border-radius: 25px;
+  z-index: 1000;
+  box-shadow: 0 0 40px rgba(76, 201, 240, 0.12);
+  overflow: hidden;
+}
+
+/* MOVING NEON BORDER */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 27px;
+  background: linear-gradient(90deg, #4cc9f0, #2563eb, #f72585, #4cc9f0);
+  z-index: -1;
+  opacity: 0.35;
+  filter: blur(10px);
+  animation: navGlow 6s linear infinite;
+}
+
+@keyframes navGlow {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.gaming-logo {
+  width: 65px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-space-grotesk);
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -2px;
+  color: white;
+  background: linear-gradient(145deg, rgba(0, 229, 255, 0.15), rgba(37, 99, 235, 0.25));
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  position: relative;
+  text-shadow: 0 0 10px #00e5ff, 0 0 25px #2563eb;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5), inset 0 0 20px rgba(0, 229, 255, 0.15);
+  transform: skew(-8deg);
+  transition: 0.35s;
+}
+
+/* small gaming corner */
+.gaming-logo::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  width: 35px;
+  height: 3px;
+  background: #f72585;
+  box-shadow: 0 0 10px #f72585;
+}
+
+.gaming-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 15px;
+  width: 35px;
+  height: 3px;
+  background: #00e5ff;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.gaming-logo:hover {
+  transform: skew(-8deg) scale(1.12);
+  border-color: #f72585;
+  box-shadow: 0 0 35px #00e5ff, 0 0 60px rgba(247, 37, 133, 0.5);
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-space-grotesk);
+  color: #a8b2d1;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: 0.35s;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: white;
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px #4cc9f0;
+}
+
+/* NEON UNDERLINE */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #4cc9f0, #f72585);
+  transition: 0.4s;
+  box-shadow: 0 0 15px #4cc9f0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK */
+.nav-links a.active {
+  color: #4cc9f0;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .navbar {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    top: 15px;
+    height: 65px;
+    padding: 0 15px;
+    border-radius: 18px;
+  }
+
+  .gaming-logo {
+    width: 50px;
+    height: 42px;
+    font-size: 24px;
+  }
+
+  .gaming-logo::before,
+  .gaming-logo::after {
+    width: 20px;
+    height: 2px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .nav-links a::after {
+    bottom: -6px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    top: 10px;
+    height: 58px;
+    padding: 0 12px;
+    border-radius: 14px;
+  }
+
+  .gaming-logo {
+    width: 42px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .gaming-logo::before,
+  .gaming-logo::after {
+    width: 15px;
+    height: 2px;
+  }
+
+  .gaming-logo::before {
+    top: -2px;
+    left: 10px;
+  }
+  .gaming-logo::after {
+    bottom: -2px;
+    right: 10px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .nav-links a::after {
+    bottom: -4px;
+    height: 2px;
+  }
+}

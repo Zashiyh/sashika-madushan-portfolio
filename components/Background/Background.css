@@ -1,0 +1,150 @@
+.background {
+
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -10;
+
+  background: #050505;
+
+}
+
+
+
+.gradient {
+
+  position: absolute;
+
+  width: 600px;
+
+  height: 600px;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: .35;
+
+  animation: float 18s ease-in-out infinite alternate;
+
+}
+
+
+
+.gradient-1 {
+
+  background: #02114e;
+
+  top: -150px;
+
+  left: -120px;
+
+}
+
+
+
+.gradient-2 {
+
+  background: #03094b;
+
+  top: 20%;
+
+  right: -180px;
+
+}
+
+
+
+.gradient-3 {
+
+  background: #0e024c;
+
+  opacity: .08;
+
+  bottom: -180px;
+
+  left: 20%;
+
+}
+
+
+
+.gradient-4 {
+
+  background: #1a1287;
+
+  bottom: -150px;
+
+  right: 10%;
+
+}
+
+
+
+.grid {
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+
+    linear-gradient(
+      rgba(0, 6, 7, 0.08) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(10, 7, 83, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size:60px 60px;
+
+}
+
+
+
+.noise {
+
+  position:absolute;
+
+  inset:0;
+
+  opacity:.025;
+
+  background-image:
+
+    radial-gradient(
+      circle,
+      white 1px,
+      transparent 1px
+    );
+
+  background-size:8px 8px;
+
+}
+
+
+
+@keyframes float {
+
+  from {
+
+    transform:
+    translate(0,0)
+    scale(1);
+
+  }
+
+
+  to {
+
+    transform:
+    translate(120px,-80px)
+    scale(1.2);
+
+  }
+
+}

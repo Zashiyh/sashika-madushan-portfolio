@@ -1,0 +1,401 @@
+/* ===== LOADING SCREEN ===== */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a12;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===== ANIMATED BACKGROUND ===== */
+.bg-animated {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.03;
+  animation: orbFloat 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  background: #4cc9f0;
+  top: -150px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 350px;
+  height: 350px;
+  background: #f72585;
+  bottom: -120px;
+  left: -80px;
+  animation-delay: 7s;
+  animation-duration: 25s;
+}
+
+.orb-3 {
+  width: 250px;
+  height: 250px;
+  background: #2563eb;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 14s;
+  animation-duration: 30s;
+  opacity: 0.02;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(40px, -40px) scale(1.1); }
+  50% { transform: translate(-30px, 30px) scale(0.9); }
+  75% { transform: translate(20px, 40px) scale(1.05); }
+}
+
+/* ===== LOADING CONTAINER ===== */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+  padding: 40px 48px 32px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  min-width: 280px;
+  max-width: 380px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* ===== TOP GLOW BAR ===== */
+.top-glow-bar {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(76, 201, 240, 0.1), transparent);
+  animation: barPulse 3s ease-in-out infinite;
+}
+
+@keyframes barPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* ===== LOGO SECTION ===== */
+.logo-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== LOGO BOX WRAPPER ===== */
+.logo-box-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== LOGO TEXT ===== */
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 4px;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  z-index: 2;
+}
+
+.logo-s {
+  color: #4cc9f0;
+}
+
+.logo-m {
+  color: #f72585;
+}
+
+/* ===== BOX PROGRESS INDICATOR ===== */
+.box-progress-indicator {
+  position: absolute;
+  bottom: 22px;
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.box-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4cc9f0, #f72585);
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+/* ===== PROGRESS SECTION ===== */
+.progress-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== PERCENTAGE ===== */
+.percentage {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.percent-number {
+  font-size: 38px;
+  font-weight: 300;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -1px;
+}
+
+.percent-symbol {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.08);
+  font-weight: 300;
+}
+
+/* ===== PROGRESS TRACK ===== */
+.progress-track {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-line {
+  height: 100%;
+  background: linear-gradient(90deg, #4cc9f0, #f72585);
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.progress-glow-line {
+  position: absolute;
+  inset: -4px;
+  background: radial-gradient(ellipse at center, rgba(76, 201, 240, 0.06), transparent);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+/* ===== STATUS ===== */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.status-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #4cc9f0;
+  display: inline-block;
+  animation: dotBlink 1.5s ease-in-out infinite;
+}
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.status-text {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* ===== BOTTOM LINE ===== */
+.bottom-line {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+  opacity: 0.15;
+}
+
+.line-dash {
+  width: 20px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.line-dash:nth-child(odd) {
+  background: rgba(76, 201, 240, 0.08);
+}
+
+/* ===== BACKGROUND GLOWS ===== */
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.025;
+}
+
+.g1 {
+  width: 250px;
+  height: 250px;
+  background: #4cc9f0;
+  top: -80px;
+  right: -60px;
+  animation: glowFloat 12s ease-in-out infinite;
+}
+
+.g2 {
+  width: 280px;
+  height: 280px;
+  background: #f72585;
+  bottom: -100px;
+  left: -80px;
+  animation: glowFloat 16s ease-in-out infinite reverse;
+}
+
+@keyframes glowFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-30px, 30px) scale(0.9); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .loading-container {
+    padding: 28px 24px 24px;
+    min-width: auto;
+    max-width: 300px;
+    gap: 20px;
+  }
+
+  .logo-box-wrapper {
+    width: 110px;
+    height: 110px;
+  }
+
+  .logo-text {
+    font-size: 30px;
+  }
+
+  .box-progress-indicator {
+    bottom: 18px;
+    left: 24px;
+    right: 24px;
+  }
+
+  .percent-number {
+    font-size: 30px;
+  }
+
+  .percent-symbol {
+    font-size: 14px;
+  }
+
+  .status-text {
+    font-size: 9px;
+  }
+
+  .bg-glow {
+    width: 180px;
+    height: 180px;
+    filter: blur(60px);
+  }
+
+  .g1 { width: 180px; height: 180px; }
+  .g2 { width: 200px; height: 200px; }
+
+  .top-glow-bar {
+    left: 10%;
+    right: 10%;
+  }
+
+  .bottom-line {
+    gap: 4px;
+  }
+  .line-dash {
+    width: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .loading-container {
+    padding: 20px 16px 18px;
+    max-width: 250px;
+    gap: 16px;
+    border-radius: 14px;
+  }
+
+  .logo-box-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .box-progress-indicator {
+    bottom: 14px;
+    left: 18px;
+    right: 18px;
+  }
+
+  .percent-number {
+    font-size: 24px;
+  }
+
+  .percent-symbol {
+    font-size: 12px;
+  }
+
+  .status-text {
+    font-size: 8px;
+  }
+
+  .line-dash {
+    width: 10px;
+  }
+}
