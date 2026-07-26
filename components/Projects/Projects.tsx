@@ -17,7 +17,7 @@ const projects = [
   {
     title: "Traveler App",
     image: "/traveler.png",
-    description: "A travel social media application where users can share travel experiences and photos.",
+    description: "Traveler is a modern travel social media mobile application developed using Android Studio and Jetpack Compose. The app allows users to share travel experiences, upload photos, explore destinations, and interact with other travelers. It features Firebase Authentication, Firebase Realtime Database, image uploading, user profiles, and a clean Material Design interface, providing a seamless and engaging travel community experience.",
     tech: ["Android", "Jetpack Compose", "Firebase", "Kotlin"],
     github: "#",
     demo: "#"
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "IntelliChat AI",
     image: "/chatbot.png",
-    description: "AI chatbot application with modern chat interface and backend API integration.",
+    description: "IntelliChat AI is an intelligent AI-powered chatbot web application developed using React, TypeScript, Tailwind CSS, FastAPI, Python, and MongoDB. The application enables users to interact with an AI assistant through a modern chat interface, supporting real-time conversations, file attachments, and secure message storage. It provides a fast, responsive, and user-friendly experience for AI-powered communication.",
     tech: ["React", "FastAPI", "MongoDB", "Gemini AI"],
     github: "#",
     demo: "#"
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "Gamer Zone",
     image: "/gamerzone.png",
-    description: "game selling website ubisoft, rockstar and EA games",
+    description: "GamerZone is a responsive game selling web application developed using HTML, CSS, PHP, and MySQL. The platform allows users to browse and purchase games through an intuitive interface, while administrators can manage game listings, categories, and customer orders. The system provides a secure and user-friendly online game store experience.",
     tech: ["HTML", "php", "CSS", "MYSQL"],
     github: "#",
     demo: "#"
