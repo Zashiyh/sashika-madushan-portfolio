@@ -30,6 +30,17 @@ const projects = [
     github: "https://github.com/Zashiyh/ChatBot",
     demo: "https://intellichat-demo.vercel.app"
   },
+
+  {
+    title: "Smart POS System",
+    image: "/smartpos.png",
+    description: "SmartPOS Pro is a full-stack retail management system that enables businesses to manage products, inventory, sales, customers, invoices, and analytics through a modern, responsive dashboard. Built with Next.js, TypeScript, MongoDB, and JWT authentication, it delivers secure, fast, and scalable business operations.",
+    tech: ["React", "Next.js 15", "JWT Authentication", "MongoDB Atlas", "Tailwind CSS",],
+    github: "https://github.com/Zashiyh/smart-pos",
+    demo: "https://smart-pos-indol.vercel.app/"
+  },
+
+
   {
     title: "Gamer Zone",
     image: "/gamerzone.png",

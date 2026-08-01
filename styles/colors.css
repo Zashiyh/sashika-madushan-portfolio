@@ -1,0 +1,51 @@
+:root {
+
+  /* Background */
+  --bg: #050505;
+
+
+  /* Primary Cyan */
+  --primary: #4cc9f0;
+  --cyan-bright: #00e5ff;
+  --cyan-soft: #38bdf8;
+
+
+  /* Black Shades */
+  --black: #000000;
+  --dark-bg: #071923;
+  --dark-card: #0a0a0a;
+
+
+  /* White */
+  --text: #ffffff;
+  --text-secondary: #b8c1d9;
+
+
+  /* Glass Cards */
+  --card: rgba(255,255,255,0.05);
+  --card-hover: rgba(76,201,240,0.08);
+
+  --border: rgba(76,201,240,0.25);
+
+
+  /* Glow Effects */
+  --glow-cyan: rgba(76,201,240,0.35);
+  --glow-white: rgba(255,255,255,0.15);
+
+
+  /* Gradient Colors */
+  --gradient-main: linear-gradient(
+    90deg,
+    #4cc9f0,
+    #00e5ff
+  );
+
+
+  --gradient-dark: linear-gradient(
+    135deg,
+    #000000,
+    #071923,
+    #4cc9f0
+  );
+
+}
