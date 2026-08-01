@@ -1,5 +1,5 @@
 "use client";
-
+import { SiFastapi } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import {
@@ -55,7 +55,6 @@ const skills = [
     icon: <FaCloud />,
     items: [
       { name: "AWS", icon: <FaAws />, level: 75 },
-      { name: "Docker", icon: <FaDocker />, level: 70 },
       { name: "Git", icon: <FaGitAlt />, level: 85 },
       { name: "Linux", icon: <FaLinux />, level: 75 },
     ]
@@ -65,6 +64,7 @@ const skills = [
     icon: <FaPaintBrush />,
     items: [
       { name: "Figma", icon: <SiFigma />, level: 85 },
+      { name: "FastAPI", icon: <SiFastapi />, level: 75 },
       { name: "Postman", icon: <SiPostman />, level: 85 }
     ]
   }
