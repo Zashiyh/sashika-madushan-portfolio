@@ -26,7 +26,7 @@
     rgba(0, 0, 0, 0.1) 0px 32px 64px;
 }
 
-/* ===== GLASS EFFECT ===== */
+/*  GLASS EFFECT  */
 .border-glow-card.glass-effect {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));

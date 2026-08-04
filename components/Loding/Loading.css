@@ -1,4 +1,4 @@
-/* ===== LOADING SCREEN ===== */
+/*  LOADING SCREEN  */
 .loading-screen {
   position: fixed;
   inset: 0;
@@ -11,7 +11,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* ===== ANIMATED BACKGROUND ===== */
+/*  ANIMATED BACKGROUND  */
 .bg-animated {
   position: absolute;
   inset: 0;
@@ -65,7 +65,7 @@
   75% { transform: translate(20px, 40px) scale(1.05); }
 }
 
-/* ===== LOADING CONTAINER ===== */
+/*  LOADING CONTAINER  */
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
-/* ===== TOP GLOW BAR ===== */
+/*  TOP GLOW BAR  */
 .top-glow-bar {
   position: absolute;
   top: 0;
@@ -102,7 +102,7 @@
   50% { opacity: 1; }
 }
 
-/* ===== LOGO SECTION ===== */
+/*  LOGO SECTION  */
 .logo-section {
   position: relative;
   display: flex;
@@ -110,7 +110,7 @@
   justify-content: center;
 }
 
-/* ===== LOGO BOX WRAPPER ===== */
+/*  LOGO BOX WRAPPER  */
 .logo-box-wrapper {
   position: relative;
   width: 140px;
@@ -125,7 +125,7 @@
   height: 100%;
 }
 
-/* ===== LOGO TEXT ===== */
+/*  LOGO TEXT  */
 .logo-text {
   position: absolute;
   top: 50%;
@@ -147,7 +147,7 @@
   color: #f72585;
 }
 
-/* ===== BOX PROGRESS INDICATOR ===== */
+/*  BOX PROGRESS INDICATOR  */
 .box-progress-indicator {
   position: absolute;
   bottom: 22px;
@@ -166,7 +166,7 @@
   transition: width 0.2s ease;
 }
 
-/* ===== PROGRESS SECTION ===== */
+/*  PROGRESS SECTION  */
 .progress-section {
   width: 100%;
   display: flex;
@@ -175,7 +175,7 @@
   gap: 10px;
 }
 
-/* ===== PERCENTAGE ===== */
+/*  PERCENTAGE  */
 .percentage {
   display: flex;
   align-items: baseline;
@@ -196,7 +196,7 @@
   font-weight: 300;
 }
 
-/* ===== PROGRESS TRACK ===== */
+/*  PROGRESS TRACK  */
 .progress-track {
   width: 100%;
   height: 2px;
@@ -221,7 +221,7 @@
   pointer-events: none;
 }
 
-/* ===== STATUS ===== */
+/*  STATUS  */
 .status {
   display: flex;
   align-items: center;
@@ -250,7 +250,7 @@
   font-weight: 400;
 }
 
-/* ===== BOTTOM LINE ===== */
+/*  BOTTOM LINE  */
 .bottom-line {
   display: flex;
   gap: 6px;
@@ -269,7 +269,7 @@
   background: rgba(76, 201, 240, 0.08);
 }
 
-/* ===== BACKGROUND GLOWS ===== */
+/*  BACKGROUND GLOWS  */
 .bg-glow {
   position: absolute;
   border-radius: 50%;
@@ -302,7 +302,7 @@
   66% { transform: translate(-30px, 30px) scale(0.9); }
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 @media (max-width: 480px) {
   .loading-container {
     padding: 28px 24px 24px;

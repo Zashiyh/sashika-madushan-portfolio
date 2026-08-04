@@ -1,4 +1,4 @@
-// Projects.tsx
+
 "use client";
 
 import { useState, useEffect, useCallback, useMemo, lazy, Suspense } from "react";
@@ -190,7 +190,7 @@ const projectsData = [
   }
 ];
 
-// ===== Optimized Modal Component =====
+//  Optimized Modal Component 
 const ProjectModal = ({ project, onClose }: { project: typeof projectsData[0] | null; onClose: () => void }) => {
   // Memoize modal content to prevent unnecessary re-renders
   const modalContent = useMemo(() => {
@@ -357,7 +357,7 @@ const ProjectModal = ({ project, onClose }: { project: typeof projectsData[0] | 
   );
 };
 
-// ===== Main Component =====
+//  Main Component 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null);
 
