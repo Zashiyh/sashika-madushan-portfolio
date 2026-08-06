@@ -42,7 +42,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/Zashiyh/bookinglkapi",
-    demo: "https://hotel-booking-demo.vercel.app",
+    
     number: "01"
   },
   {
@@ -77,7 +77,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/Zashiyh/Traveler1",
-    demo: "https://traveler-demo.vercel.app",
+   
     number: "02"
   },
   {
@@ -113,7 +113,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/Zashiyh/ChatBot",
-    demo: "https://intellichat-demo.vercel.app",
+    
     number: "03"
   },
   {
@@ -185,7 +185,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/your-username/gamer-zone",
-    demo: "https://gamerzone-demo.vercel.app",
+    
     number: "05"
   }
 ];
